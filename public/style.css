@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.chat-container {
+    width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding: 32px;
+    border: 1px solid #e3e3e3;
+}
+#chat-window {
+    height: 450px;
+    overflow-y: auto;
+    border: 1px solid #dbeafe;
+    padding: 18px;
+    margin-bottom: 18px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+    border-radius: 12px;
+    font-size: 1.08em;
+}
+.message {
+    margin: 12px 0;
+    padding: 12px 18px;
+    border-radius: 18px;
+    max-width: 90%;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-size: 1.08em;
+}
+.user {
+    background: linear-gradient(90deg, #d1e7dd 0%, #b6f0e6 100%);
+    color: #1b4d3e;
+    align-self: flex-end;
+    float: right;
+    clear: both;
+    border: 1px solid #b6f0e6;
+}
+.bot {
+    background: linear-gradient(90deg, #e2e3e5 0%, #f0eafc 100%);
+    color: #3a3a4d;
+    align-self: flex-start;
+    float: left;
+    clear: both;
+    border: 1px solid #cfdef3;
+}
+h4 {
+    color: #3b82f6;
+    margin: 16px 0 8px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+strong {
+    color: #7c3aed;
+}
+ul {
+    margin: 0 0 12px 24px;
+    padding: 0;
+}
+#chat-form {
+    display: flex;
+    gap: 10px;
+}
+#user-input {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #dbeafe;
+    font-size: 1em;
+    background: #f8fafc;
+}
+button {
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #3b82f6 0%, #7c3aed 100%);
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(59,130,246,0.08);
+    transition: background 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #7c3aed 0%, #3b82f6 100%);
+}
+.card {
+    background: #f6f8ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(59,130,246,0.07);
+    margin: 18px 0;
+    padding: 18px 22px;
+    border-left: 6px solid #7c3aed;
+}
+.card.destinations { border-left-color: #3b82f6; background: #e0f2fe; }
+.card.costs { border-left-color: #f59e42; background: #fff7ed; }
+.card.itinerary { border-left-color: #10b981; background: #e7fbe7; }
+.card.tips { border-left-color: #f43f5e; background: #ffe4e6; }
+.card h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.13em;
+    font-weight: 700;
+    color: #7c3aed;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+}
